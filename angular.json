@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "componentlife"
+  "defaultProject": "componentlife",
+  "cli": {
+    "analytics": "d9c1e431-f607-4d44-b3c3-78d721b49cb7"
+  }
 }
