@@ -1,11 +1,12 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnChanges,OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent  implements OnInit{
+export class AppComponent  implements OnInit,OnChanges{
   value:string=''
   title = 'componentlife';
   destroy=true;
@@ -14,6 +15,10 @@ export class AppComponent  implements OnInit{
   }
   constructor(){
     console.log('constructor called parent')
+    // of(1,2,3,4)
+  }
+  ngOnChanges(){
+    console.log('constructor called parent ngOnChanges')
   }
   ngOnInit(): void {
     
